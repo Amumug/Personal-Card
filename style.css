@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    box-shadow: 0 0 20px;
+    width: 70%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #444342;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+span {
+    color: #367188;
+}
+
+.job-title {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+img {
+    border-radius: 50%;
+    color: #444342;
+    width: 50%;
+}
+
+.social-links i {
+    color: white;
+    opacity: 0.6;
+    font-size: 1.25rem;
+}
+
+.social-links:hover,
+.social-links:focus {
+    opacity: 1;
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .profile-name {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    img{
+        width: 100%;
+    }
+
+}
